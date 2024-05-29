@@ -11,14 +11,17 @@ import {
   Text,
   View,
   TouchableOpacity,
+  NativeModules,
   StyleSheet,
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+const ShareSheetModule = NativeModules.ShareSheetModule;
+
 function App(): JSX.Element {
   const onShare = () => {
-   //implement native module
+    ShareSheetModule.openShareSheet('https://www.google.com');
   };
 
   return (

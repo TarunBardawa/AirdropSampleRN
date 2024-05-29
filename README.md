@@ -1,1 +1,1 @@
-Repository for demonstrating how to display only AirDrop as an option in the iOS share sheet.
+iOS share sheet customization in React Native to show only AirDrop as an option.
